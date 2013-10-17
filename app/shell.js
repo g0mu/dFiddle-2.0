@@ -1,5 +1,23 @@
 ﻿define(['plugins/router'], function (router) {
 
+    //Admin Routes
+    var adminRoutes = ko.computed(function () {
+            
+            //Output to chrome console
+            console.log('Test Filter Admin Routes');
+            console.log(router.routes.filter(function (r) { return r.admin; } ); );
+            
+            console.log('Test Filter All Routes');
+            console.log(router.routes.filter(function (r) { return r; } ); );
+            
+            console.log('Test Routes');
+            console.log(router.routes);
+            
+            return router.routes.filter(function (r) {
+                return r.admin;
+    });
+
+    
     // Redirecting from / to first route
     router.guardRoute = function(routeInfo, params, instance){
         if (params.fragment === ''){
