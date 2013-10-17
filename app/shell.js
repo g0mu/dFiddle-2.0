@@ -5,10 +5,10 @@
             
             //Output to chrome console
             console.log('Test Filter Admin Routes');
-            console.log(router.routes.filter(function (r) { return r.admin; } ); );
+            console.log(router.routes.filter(function (r) { return r.admin; }));
             
             console.log('Test Filter All Routes');
-            console.log(router.routes.filter(function (r) { return r; } ); );
+            console.log(router.routes.filter(function (r) { return r; }));
             
             console.log('Test Routes');
             console.log(router.routes);
