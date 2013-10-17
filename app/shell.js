@@ -2,7 +2,6 @@
 
     //Admin Routes
     var adminRoutes = ko.computed(function () {
-            
             //Output to chrome console
             console.log('Test Filter Admin Routes');
             console.log(router.routes.filter(function (r) { return r.admin; }));
