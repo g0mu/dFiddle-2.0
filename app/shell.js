@@ -15,7 +15,7 @@
             return router.routes.filter(function (r) {
                 return r.admin;
             });
-    });
+    };
 
     
     // Redirecting from / to first route
