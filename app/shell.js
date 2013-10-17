@@ -15,6 +15,7 @@
             
             return router.routes.filter(function (r) {
                 return r.admin;
+            });
     });
 
     
