@@ -1,7 +1,7 @@
 ﻿define(['plugins/router'], function (router) {
 
     //Admin Routes
-    var adminRoutes = ko.computed(function () {
+    var adminRoutes = function () {
             //Output to chrome console
             console.log('Test Filter Admin Routes');
             console.log(router.routes.filter(function (r) { return r.admin; }));
