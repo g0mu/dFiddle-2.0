@@ -40,6 +40,15 @@
                 { route: 'knockout-samples*details', hash: '#knockout-samples', moduleId: 'ko/index', title: 'Knockout Samples', nav: true },
                 { route: 'extras*details', hash: '#extras', moduleId: 'extras/index', title: 'Extras', nav: true,  admin: true  }
             ]).buildNavigationModel();
+            
+            console.log('Test Filter Admin Routes');
+            console.log(router.routes.filter(function (r) { return r.admin; }));
+            
+            console.log('Test Filter All Routes');
+            console.log(router.routes.filter(function (r) { return r; }));
+            
+            console.log('Test Routes');
+            console.log(router.routes);
 
             return router.activate();
         }
